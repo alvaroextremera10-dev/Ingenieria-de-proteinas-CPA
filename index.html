@@ -2,10 +2,303 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Ingeniería de proteínas - CPA</title>
+  <title>Ingeniería de proteínas - Cuaderno de actividades</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      background-color: #f5f5f5;
+    }
+    header {
+      text-align: center;
+      background-color: #111827;
+      color: white;
+      padding: 1rem 0 0.5rem 0;
+    }
+    header img {
+      max-width: 260px;   /* tamaño de la portada en la web */
+      height: auto;
+      display: block;
+      margin: 0.5rem auto 0.5rem auto;
+      border-radius: 8px;
+    }
+    header h1 {
+      margin: 0.2rem 0;
+      font-size: 1.7rem;
+    }
+    header p {
+      margin: 0.2rem 0 0.8rem 0;
+      font-size: 0.95rem;
+      color: #d1d5db;
+    }
+    nav {
+      background-color: #1f2933;
+      padding: 0.4rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #e5e7eb;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 1000px;
+      margin: 1rem auto 2rem auto;
+      padding: 0 1rem 1rem 1rem;
+      background-color: white;
+      box-shadow: 0 0 8px rgba(0,0,0,0.08);
+      border-radius: 8px;
+    }
+    section {
+      border-top: 1px solid #e5e7eb;
+      padding-top: 1rem;
+      margin-top: 1rem;
+    }
+    section:first-of-type {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+    }
+    h2 {
+      margin-top: 0;
+      color: #111827;
+    }
+    .actividad-info {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+    .captura {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #e5e7eb;
+      border-radius: 4px;
+      margin: 0.5rem 0;
+    }
+    .descargas a {
+      display: inline-block;
+      margin-right: 0.7rem;
+      margin-bottom: 0.4rem;
+      font-size: 0.9rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #6b7280;
+      padding: 0.8rem 0 1.2rem 0;
+    }
+  </style>
 </head>
 <body>
+
+<header>
+  <!-- CAMBIA portada.jpg POR EL NOMBRE REAL DE TU IMAGEN SI ES DISTINTO -->
+  <img src="portada.jpg" alt="Portada Ingeniería de proteínas">
   <h1>Ingeniería de proteínas - Cuaderno de actividades</h1>
-  <p>Prueba inicial de la página. Luego aquí pondremos las 12 actividades.</p>
+  <p><!-- Aquí puedes poner tu nombre, curso, etc. -->Álvaro Extremera Palomino · Curso 2025‑2026</p>
+</header>
+
+<nav>
+  <!-- ENLACES A CADA ACTIVIDAD (NO TOCAR LOS href, SOLO EL TEXTO SI QUIERES) -->
+  <a href="#act1">Act. 1</a>
+  <a href="#act2">Act. 2</a>
+  <a href="#act3">Act. 3</a>
+  <a href="#act4">Act. 4</a>
+  <a href="#act5">Act. 5</a>
+  <a href="#act6">Act. 6</a>
+  <a href="#act7">Act. 7</a>
+  <a href="#act8">Act. 8</a>
+  <a href="#act9">Act. 9</a>
+  <a href="#act10">Act. 10</a>
+  <a href="#act11">Act. 11</a>
+  <a href="#act12">Act. 12</a>
+</nav>
+
+<main>
+  <!-- INTRODUCCIÓN GENERAL DE LA WEB -->
+  <section id="intro">
+    <h2>Descripción general</h2>
+    <p class="actividad-info">
+      Esta página recoge de forma resumida las doce actividades del Cuaderno Personal de Actividades
+      de la asignatura <strong>Ingeniería de proteínas</strong>. Desde aquí se puede acceder a una
+      breve descripción de cada práctica, ver una captura de la aplicación desarrollada en
+      Lazarus/Free Pascal y descargar los ejecutables y el código fuente asociado.
+    </p>
+  </section>
+
+  <!-- A PARTIR DE AQUÍ, UNA SECCIÓN POR ACTIVIDAD -->
+
+  <section id="act1">
+    <h2>Actividad 1 · Revisión de la proteína PI3K</h2>
+    <p class="actividad-info">
+      <!-- RESUMEN BREVE DE LA ACTIVIDAD 1 -->
+      Revisión bibliográfica de la proteína PI3K implicada en cáncer de colon, con énfasis en familia,
+      estructura, mecanismo de acción y vías de señalización PI3K/AKT/mTOR.
+    </p>
+    <!-- SI MÁS ADELANTE QUIERES PONER UNA IMAGEN (POR EJ., ESQUEMA PI3K), CAMBIA act1.png -->
+    <!-- <img class="captura" src="img/act1.png" alt="Actividad 1"> -->
+    <div class="descargas">
+      <!-- ESTA ACTIVIDAD ES TEÓRICA, PROBABLEMENTE NO TENGA PROGRAMA; PUEDES DEJARLA SIN ENLACES -->
+    </div>
+  </section>
+
+  <section id="act2">
+    <h2>Actividad 2 · Detección de formatos de archivo</h2>
+    <p class="actividad-info">
+      Programa que identifica automáticamente si un fichero corresponde a los formatos GenBank,
+      UniProt o PDB y extrae la secuencia de la proteína en código de una letra.
+    </p>
+    <!-- CAMBIA img/act2.png POR LA RUTA REAL DE LA CAPTURA DEL PROGRAMA -->
+    <img class="captura" src="img/act2.png" alt="Actividad 2: Detección de formatos">
+    <div class="descargas">
+      <!-- CAMBIA LOS href PARA APUNTAR AL .ZIP O .EXE QUE SUBAS -->
+      <a href="programas/act2_ejecutable.zip">Descargar ejecutable</a>
+      <a href="programas/act2_codigo.zip">Descargar código fuente</a>
+    </div>
+  </section>
+
+  <section id="act3">
+    <h2>Actividad 3 · CargarPDB y estructura interna TPDB</h2>
+    <p class="actividad-info">
+      Función <code>CargarPDB</code> que parsea ficheros PDB y almacena átomos, residuos y subunidades
+      en una estructura TPDB, permitiendo acceder fácilmente a la información estructural.
+    </p>
+    <img class="captura" src="img/act3.png" alt="Actividad 3: CargarPDB">
+    <div class="descargas">
+      <a href="programas/act3_ejecutable.zip">Descargar ejecutable</a>
+      <a href="programas/act3_codigo.zip">Descargar código fuente</a>
+    </div>
+  </section>
+
+  <section id="act4">
+    <h2>Actividad 4 · Análisis estructural con visores y bases de datos</h2>
+    <p class="actividad-info">
+      Uso de PDBsum, CATH, PROSITE y Jmol para estudiar dominios, estructura secundaria y motivos
+      funcionales de la proteína PI3K.
+    </p>
+    <img class="captura" src="img/act4.png" alt="Actividad 4">
+    <div class="descargas">
+      <a href="programas/act4_ejecutable.zip">Descargar ejecutable (si aplica)</a>
+      <a href="programas/act4_codigo.zip">Descargar código fuente</a>
+    </div>
+  </section>
+
+  <section id="act5">
+    <h2>Actividad 5 · Generación de PDB simplificados (CA y B‑factores)</h2>
+    <p class="actividad-info">
+      Implementación de <code>writePDB</code> para reconstruir líneas ATOM y generar ficheros PDB
+      con solo carbonos alfa, utilizados en Jmol para colorear según B‑factor.
+    </p>
+    <img class="captura" src="img/act5.png" alt="Actividad 5">
+    <div class="descargas">
+      <a href="programas/act5_ejecutable.zip">Descargar ejecutable</a>
+      <a href="programas/act5_codigo.zip">Descargar código fuente</a>
+    </div>
+  </section>
+
+  <section id="act6">
+    <h2>Actividad 6 · Ángulos φ/ψ y diagrama de Ramachandran</h2>
+    <p class="actividad-info">
+      Conjunto de funciones para calcular distancias, ángulos de enlace y torsiones y construir el
+      diagrama de Ramachandran de la proteína, verificando los resultados con RasMol.
+    </p>
+    <img class="captura" src="img/act6.png" alt="Actividad 6">
+    <div class="descargas">
+      <a href="programas/act6_ejecutable.zip">Descargar ejecutable</a>
+      <a href="programas/act6_codigo.zip">Descargar código fuente</a>
+    </div>
+  </section>
+
+  <section id="act7">
+    <h2>Actividad 7 · Transformaciones y estereodiagrama</h2>
+    <p class="actividad-info">
+      Funciones de traslación y giro que permiten generar estereodiagramas de fragmentos de la
+      proteína, comparándolos con la visión estereoscópica de RasMol/Jmol.
+    </p>
+    <img class="captura" src="img/act7.png" alt="Actividad 7">
+    <div class="descargas">
+      <a href="programas/act7_ejecutable.zip">Descargar ejecutable</a>
+      <a href="programas/act7_codigo.zip">Descargar código fuente</a>
+    </div>
+  </section>
+
+  <section id="act8">
+    <h2>Actividad 8 · Proyección y rotación de un fragmento CA</h2>
+    <p class="actividad-info">
+      Proyección de diez carbonos alfa en el plano y cálculo de la rotación necesaria para alinear
+      el primer y el último residuo, verificando la transformación en RasMol.
+    </p>
+    <img class="captura" src="img/act8.png" alt="Actividad 8">
+    <div class="descargas">
+      <a href="programas/act8_ejecutable.zip">Descargar ejecutable</a>
+      <a href="programas/act8_codigo.zip">Descargar código fuente</a>
+    </div>
+  </section>
+
+  <section id="act9">
+    <h2>Actividad 9 · RMSD y estabilidad estructural (AlphaFold2)</h2>
+    <p class="actividad-info">
+      Herramienta para generar mutantes por porcentaje, calcular matrices de distancias y RMSD y
+      analizar la estabilidad estructural comparando con modelos de AlphaFold2.
+    </p>
+    <img class="captura" src="img/act9.png" alt="Actividad 9">
+    <div class="descargas">
+      <a href="programas/act9_ejecutable.zip">Descargar ejecutable</a>
+      <a href="programas/act9_codigo.zip">Descargar código fuente</a>
+    </div>
+  </section>
+
+  <section id="act10">
+    <h2>Actividad 10 · Mutación Phe→Tyr y edición del PDB</h2>
+    <p class="actividad-info">
+      Cálculo de las coordenadas del oxígeno del grupo hidroxilo al mutar una fenilalanina a
+      tirosina y edición manual del PDB para evaluar colisiones estéricas en el entorno local.
+    </p>
+    <img class="captura" src="img/act10.png" alt="Actividad 10">
+    <div class="descargas">
+      <a href="programas/act10_ejecutable.zip">Descargar ejecutable</a>
+      <a href="programas/act10_codigo.zip">Descargar código fuente</a>
+    </div>
+  </section>
+
+  <section id="act11">
+    <h2>Actividad 11 · Predicción de enlaces disulfuro</h2>
+    <p class="actividad-info">
+      Programa que recorre todas las cisteínas de un PDB, predice posibles enlaces disulfuro según
+      criterios geométricos y los compara con los registros SSBOND para obtener TP, TN, FP y FN.
+    </p>
+    <img class="captura" src="img/act11.png" alt="Actividad 11">
+    <div class="descargas">
+      <a href="programas/act11_ejecutable.zip">Descargar ejecutable</a>
+      <a href="programas/act11_codigo.zip">Descargar código fuente</a>
+    </div>
+  </section>
+
+  <section id="act12">
+    <h2>Actividad 12 · Perfiles de hidrofobicidad y momento de Eisenberg</h2>
+    <p class="actividad-info">
+      Aplicación que calcula perfiles de hidrofobicidad (Kyte–Doolittle), momento hidrofóbico de
+      Eisenberg y espectro de potencias tipo Stroud para diversos tramos de la proteína PI3K y
+      otras proteínas de membrana.
+    </p>
+    <img class="captura" src="img/act12.png" alt="Actividad 12">
+    <div class="descargas">
+      <a href="programas/act12_ejecutable.zip">Descargar ejecutable</a>
+      <a href="programas/act12_codigo.zip">Descargar código fuente</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Página complementaria del Cuaderno de actividades de Ingeniería de proteínas.
+</footer>
+
 </body>
 </html>
