@@ -67,6 +67,8 @@ header img { display: none; }
       position: sticky;
       top: 0;
       z-index: 10;
+      display: flex;
+      justify-content: center;   /* centra los enlaces */
     }
     nav a {
       color: #e5e7eb;
@@ -96,8 +98,11 @@ header img { display: none; }
       margin-top: 0;
     }
     h2 {
-      margin-top: 0;
+      margin-top: 2.5rem;   /* añade espacio por encima */
       color: #111827;
+    }
+    section:first-of-type h2 {
+      margin-top: 0;        /* para que la intro no se baje demasiado */
     }
     .actividad-info {
       font-size: 0.95rem;
@@ -219,7 +224,7 @@ header img { display: none; }
     herramientas que necesitan manipular geométricamente la proteína, sin requerir visores externos para validar 
     el parseo más allá de una comprobación puntual si el usuario lo desea.
     </p>
-    <img class="captura" src="img/act3.png" alt="Actividad 3: CargarPDB">
+    <img class="captura" src="act3.png" alt="Actividad 3: CargarPDB">
     <div class="descargas">
       <a href="programas/act3_ejecutable.zip">Descargar ejecutable</a>
       <a href="programas/act3_codigo.zip">Descargar código fuente</a>
@@ -236,7 +241,7 @@ header img { display: none; }
     apoyarse en estas herramientas externas para comprobar la localización de los dominios descritos, resaltar 
     elementos de estructura secundaria y obtener capturas representativas de la organización de la proteína.
     </p>
-    <img class="captura" src="img/act4.png" alt="Actividad 4">
+    <img class="captura" src="act4.png" alt="Actividad 4">
     <div class="descargas">
       <a href="programas/act4_ejecutable.zip">Descargar ejecutable (si aplica)</a>
       <a href="programas/act4_codigo.zip">Descargar código fuente</a>
@@ -254,7 +259,7 @@ header img { display: none; }
     ya que la interpretación de los resultados se basa en la comparación entre la estructura coloreada y la localización 
     espacial de las regiones más flexibles dentro del modelo tridimensional.
     </p>
-    <img class="captura" src="img/act5.png" alt="Actividad 5">
+    <img class="captura" src="act5.png" alt="Actividad 5">
     <div class="descargas">
       <a href="programas/act5_ejecutable.zip">Descargar ejecutable</a>
       <a href="programas/act5_codigo.zip">Descargar código fuente</a>
@@ -272,7 +277,7 @@ header img { display: none; }
     comparar, al menos en los diez primeros residuos, los valores de torsión calculados con los que ofrece RasMol mediante 
     la opción <em>set picking torsion</em> u órdenes equivalentes en otros visores moleculares.
     </p>
-    <img class="captura" src="img/act6.png" alt="Actividad 6">
+    <img class="captura" src="act6.png" alt="Actividad 6">
     <div class="descargas">
       <a href="programas/act6_ejecutable.zip">Descargar ejecutable</a>
       <a href="programas/act6_codigo.zip">Descargar código fuente</a>
@@ -290,7 +295,7 @@ header img { display: none; }
     los pares estereoscópicos con la función de visión estéreo de RasMol o Jmol, que sirve como referencia externa 
     para ajustar los ángulos de giro y la disposición final de las dos proyecciones.
     </p>
-    <img class="captura" src="img/act7.png" alt="Actividad 7">
+    <img class="captura" src="act7.png" alt="Actividad 7">
     <div class="descargas">
       <a href="programas/act7_ejecutable.zip">Descargar ejecutable</a>
       <a href="programas/act7_codigo.zip">Descargar código fuente</a>
@@ -308,7 +313,7 @@ header img { display: none; }
     u otro visor equivalente, donde se puede verificar que el fragmento rotado presenta la alineación esperada y que 
     la transformación implementada reproduce correctamente el giro calculado matemáticamente.
     </p>
-    <img class="captura" src="img/act8.png" alt="Actividad 8">
+    <img class="captura" src="act8.png" alt="Actividad 8">
     <div class="descargas">
       <a href="programas/act8_ejecutable.zip">Descargar ejecutable</a>
       <a href="programas/act8_codigo.zip">Descargar código fuente</a>
@@ -326,7 +331,7 @@ header img { display: none; }
     como DALI o US‑align, lo que permite comparar los RMSD internos del programa con alineamientos estándar y apoyar 
     la discusión sobre la robustez estructural de la proteína frente a mutaciones extensas.
     </p>
-    <img class="captura" src="img/act9.png" alt="Actividad 9">
+    <img class="captura" src="act9.png" alt="Actividad 9">
     <div class="descargas">
       <a href="programas/act9_ejecutable.zip">Descargar ejecutable</a>
       <a href="programas/act9_codigo.zip">Descargar código fuente</a>
@@ -345,7 +350,7 @@ header img { display: none; }
     y discutir hasta qué punto una mutación aparentemente sencilla puede perturbar el ajuste de la cadena lateral en 
     el interior del modelo tridimensional.
     </p>
-    <img class="captura" src="img/act10.png" alt="Actividad 10">
+    <img class="captura" src="act10.png" alt="Actividad 10">
     <div class="descargas">
       <a href="programas/act10_ejecutable.zip">Descargar ejecutable</a>
       <a href="programas/act10_codigo.zip">Descargar código fuente</a>
@@ -364,7 +369,7 @@ header img { display: none; }
     sobre todo en la proteína PI3K y en otras estructuras de referencia, hasta qué punto es posible recuperar la 
     red de puentes disulfuro reales a partir únicamente de las coordenadas atómicas.
     </p>
-    <img class="captura" src="img/act11.png" alt="Actividad 11">
+    <img class="captura" src="act11.png" alt="Actividad 11">
     <div class="descargas">
       <a href="programas/act11_ejecutable.zip">Descargar ejecutable</a>
       <a href="programas/act11_codigo.zip">Descargar código fuente</a>
@@ -383,7 +388,7 @@ header img { display: none; }
     hélices α, dominios anfipáticos y posibles segmentos transmembrana, apoyando la interpretación con la estructura 
     tridimensional conocida o con predicciones de topología obtenidas por herramientas externas cuando es necesario.
     </p>
-    <img class="captura" src="img/act12.png" alt="Actividad 12">
+    <img class="captura" src="act12.png" alt="Actividad 12">
     <div class="descargas">
       <a href="programas/act12_ejecutable.zip">Descargar ejecutable</a>
       <a href="programas/act12_codigo.zip">Descargar código fuente</a>
