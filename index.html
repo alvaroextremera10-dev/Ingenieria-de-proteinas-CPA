@@ -213,12 +213,10 @@ header img { display: none; }
     <h2>Actividad 2 · Detección de formatos de archivo</h2>
     <p class="actividad-info">
     En esta actividad se ha desarrollado una herramienta capaz de leer ficheros descargados de bases de datos 
-    biomoleculares y discriminar automáticamente si corresponden a los formatos GenBank, UniProt o PDB, a partir 
+    biomoleculares y discriminar automáticamente si corresponden a los formatos GenBank, UniProt o PDB (entre otros), a partir 
     de sus cabeceras y campos característicos. A partir del formato identificado, el programa extrae la secuencia 
     primaria de la proteína y la muestra en código de una letra, lista para ser utilizada en otras actividades del 
-    cuaderno o en programas externos de análisis de secuencia. Se trata de una utilidad de preprocesado: el usuario 
-    no necesita emplear visores estructurales como Jmol para comprobar resultados, ya que todo el flujo se basa en 
-    texto y en la comparación de las secuencias obtenidas con las que figuran en los ficheros originales.
+    cuaderno o en programas externos de análisis de secuencia.
     </p>
     <!-- CAMBIA img/act2.png POR LA RUTA REAL DE LA CAPTURA DEL PROGRAMA -->
     <img class="captura" src="act2.png" alt="Actividad 2: Detección de formatos">
@@ -266,13 +264,14 @@ header img { display: none; }
     <p class="actividad-info">
     En esta actividad se ha programado la función <code>writePDB</code>, que reconstruye líneas ATOM con el formato 
     correcto del PDB a partir de la estructura interna <code>TPDB</code> y permite generar ficheros que contienen 
-    únicamente los carbonos alfa de la proteína. Estos PDB simplificados se cargan después en Jmol para representar 
+    únicamente los carbonos alfa (o los nitrógenos de forma adicional) de la proteína. Estos PDB simplificados se cargan después en Jmol para representar 
     el esqueleto de la cadena en modo <em>spacefill</em> y colorearlo según los factores de temperatura (B‑factores), 
     identificando de forma visual los residuos con mayor movilidad. El uso de Jmol es imprescindible en esta práctica, 
     ya que la interpretación de los resultados se basa en la comparación entre la estructura coloreada y la localización 
     espacial de las regiones más flexibles dentro del modelo tridimensional.
     </p>
     <img class="captura" src="act5.png" alt="Actividad 5">
+    <img class="captura" src="act5.1.png" alt="Actividad 5">
     <div class="descargas">
       <a href="https://github.com/alvaroextremera10-dev/Ingenieria-de-proteinas-CPA/raw/refs/heads/main/Actividad_5.exe">Descargar ejecutable</a>
       <a href="https://github.com/alvaroextremera10-dev/Ingenieria-de-proteinas-CPA/raw/refs/heads/main/Actividad_5.zip">Descargar código fuente</a>
@@ -287,7 +286,7 @@ header img { display: none; }
     los ángulos φ y ψ de cada residuo de la proteína y representar su diagrama de Ramachandran. El programa genera 
     automáticamente la nube de puntos en el plano φ–ψ para distintos tramos de la secuencia, facilitando la identificación 
     de regiones compatibles con hélices α, láminas β o conformaciones no permitidas. Para validar los resultados se propone 
-    comparar, al menos en los diez primeros residuos, los valores de torsión calculados con los que ofrece RasMol mediante 
+    comparar, al menos en los diez primeros residuos, los valores de torsión calculados con los que ofrece Jmol mediante 
     la opción <em>set picking torsion</em> u órdenes equivalentes en otros visores moleculares.
     </p>
     <img class="captura" src="act6.png" alt="Actividad 6">
@@ -305,7 +304,7 @@ header img { display: none; }
     rutinas se construye una aplicación capaz de generar estereodiagramas de fragmentos definidos, produciendo dos 
     vistas ligeramente rotadas que el usuario puede fusionar visualmente para obtener una percepción tridimensional 
     mejorada de la estructura. La corrección de las imágenes se verifica comparando la orientación y separación de 
-    los pares estereoscópicos con la función de visión estéreo de RasMol o Jmol, que sirve como referencia externa 
+    los pares estereoscópicos con la función de visión estéreo de Jmol, que sirve como referencia externa 
     para ajustar los ángulos de giro y la disposición final de las dos proyecciones.
     </p>
     <img class="captura" src="act7.png" alt="Actividad 7">
@@ -322,7 +321,7 @@ header img { display: none; }
     coordenadas sobre el plano cartesiano, tomando el eje Z como perpendicular al plano de la pantalla. A partir de 
     la posición inicial del primer y del último residuo, el programa deduce el ángulo de giro necesario alrededor de 
     Z para que ambos puntos se superpongan en la nueva proyección, y aplica esa misma transformación a los ocho Cα 
-    restantes, recalculando y dibujando sus coordenadas transformadas. El resultado se comprueba visualmente en RasMol 
+    restantes, recalculando y dibujando sus coordenadas transformadas. El resultado se comprueba visualmente en Jmol 
     u otro visor equivalente, donde se puede verificar que el fragmento rotado presenta la alineación esperada y que 
     la transformación implementada reproduce correctamente el giro calculado matemáticamente.
     </p>
