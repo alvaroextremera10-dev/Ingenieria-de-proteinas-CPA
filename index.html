@@ -14,18 +14,18 @@
       position: relative;
       text-align: center;
       color: white;
-      min-height: 55vh;              /* ocupa alto de toda la pantalla */
-      background-image: url('portada.jpg');  /* nombre de tu imagen */
-      background-size: cover;         /* cubre todo el área */
+      min-height: 55vh;             
+      background-image: url('portada.jpg');  
+      background-size: cover;         
       background-position: center;
       background-repeat: no-repeat;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;      /* texto abajo */
+      justify-content: flex-end;      
       padding-bottom: 3rem;
 }
 
-/* capa oscura encima de la imagen para que se lea el texto */
+
 header::before {
       content: "";
       position: absolute;
@@ -49,7 +49,7 @@ header p {
       color: #e5e7eb;
 }
 
-/* ya no necesitamos mostrar la imagen como <img> */
+
 header img { display: none; }
 
     header h1 {
@@ -68,7 +68,7 @@ header img { display: none; }
       top: 0;
       z-index: 10;
       display: flex;
-      justify-content: center;   /* centra los enlaces */
+      justify-content: center;   
     }
     nav a {
       color: #e5e7eb;
@@ -98,11 +98,11 @@ header img { display: none; }
       margin-top: 0;
     }
     h2 {
-      margin-top: 2.5rem;   /* añade espacio por encima */
+      margin-top: 2.5rem;   
       color: #111827;
     }
     section:first-of-type h2 {
-      margin-top: 0;        /* para que la intro no se baje demasiado */
+      margin-top: 0;        
     }
     .actividad-info {
       font-size: 0.95rem;
@@ -133,11 +133,10 @@ header img { display: none; }
 
 <header>
   <h1>Ingeniería de proteínas - Cuaderno de actividades</h1>
-  <p><!-- Aquí puedes poner tu nombre, curso, etc. -->Álvaro Extremera Palomino · Curso 2025‑2026</p>
 </header>
 
 <nav>
-  <!-- ENLACES A CADA ACTIVIDAD (NO TOCAR LOS href, SOLO EL TEXTO SI QUIERES) -->
+  <!-- ENLACES A CADA ACTIVIDAD  -->
   <a href="#act1">Act. 1</a>
   <a href="#act2">Act. 2</a>
   <a href="#act3">Act. 3</a>
@@ -202,10 +201,10 @@ header img { display: none; }
     mediante el dominio RBD y el impacto de mutaciones oncogénicas frecuentes en cáncer de colon (como E542K, E545K y H1047R), 
     que provocan una activación constitutiva de la vía y favorecen la proliferación tumoral y la resistencia a terapias dirigidas. 
     </p>
-    <!-- SI MÁS ADELANTE QUIERES PONER UNA IMAGEN (POR EJ., ESQUEMA PI3K), CAMBIA act1.png -->
+    
     <img class="captura" src="act1.png" alt="Actividad 1: Revisión de la proteína PI3K">
     <div class="descargas">
-      <!-- ESTA ACTIVIDAD ES TEÓRICA, PROBABLEMENTE NO TENGA PROGRAMA; PUEDES DEJARLA SIN ENLACES -->
+      
     </div>
   </section>
 
@@ -218,10 +217,10 @@ header img { display: none; }
     primaria de la proteína y la muestra en código de una letra, lista para ser utilizada en otras actividades del 
     cuaderno o en programas externos de análisis de secuencia.
     </p>
-    <!-- CAMBIA img/act2.png POR LA RUTA REAL DE LA CAPTURA DEL PROGRAMA -->
+   
     <img class="captura" src="act2.png" alt="Actividad 2: Detección de formatos">
     <div class="descargas">
-      <!-- CAMBIA LOS href PARA APUNTAR AL .ZIP O .EXE QUE SUBAS -->
+      
       <a href="https://github.com/alvaroextremera10-dev/Ingenieria-de-proteinas-CPA/raw/refs/heads/main/Actividad_2.exe">Descargar ejecutable</a>
       <a href="https://github.com/alvaroextremera10-dev/Ingenieria-de-proteinas-CPA/raw/refs/heads/main/Actividad_2.zip">Descargar código fuente</a>
     </div>
